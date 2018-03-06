@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CMG | Social Calendar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/header.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="c-main-header clearfix">
+            <div class="header-row header-row--sty-1">
+                <div class="t-layout">
+                    <div class="t-row">
+                        <div class="t-col header-col">
+                            <a href="client-list.html" class="c-logo-w-title logo-w-title--sub-title"><i class="c-logo">Social Calendar</i><i class="txt">Social Calendar<span>Portal for scheduling social sharing.</span></i></a>
+                        </div>
+                        <!-- <div class="t-col header-col t-col--compress panel-action">
+                            <a href="add-img.html" class="c-btn btn--blue u-fr"><i class="fa fa-plus"></i>Add Image</a>
+                        </div> -->
+                        <div class="t-col header-col t-col--compress divide">
+                            <a href="javascript:void(0)" class="c-profile-info">
+                                <div class="icon">
+                                    <img src="img/cmg-logo--small.png" alt="CMG">
+                                </div>
+                                <div class="txt">
+                                    CMG
+                                </div>
+                            </a>
+                        </div>
+                        <div class="t-col header-col t-col--compress">
+                            <a href="index.html" class="c-icon"><i class="fa fa-sign-out"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="c-main">
+            
+            <section class="c-add-client">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="client-list.html" class="c-icon-btn"><i class="fa fa-arrow-left"></i></a>
+                            <div class="content-header">
+                                <h1 class="title">ADD Client</h1>
+                                <p>Fill in the form to add client.</p>
+                            </div>
+
+                            <form action="client-list.html" class="c-form-sty-1">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="c-form-item">
+                                            <label for="client-logo">Upload Client Logo:</label>
+                                            <input id="client-logo" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="c-form-item">
+                                            <label for="client-name">Client Name</label>
+                                            <input type="text" id="client-name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="c-form-item">
+                                            <label for="channels">Select Social Channels</label>
+                                            <ul class="c-channels-list js-select-channel">
+                                                <li class="off"><i class="c-icon-social icon--fb">Facebook</i></li>
+                                                <li class="off"><i class="c-icon-social icon--twitter">Twitter</i></li>
+                                                <li class="off"><i class="c-icon-social icon--linkedin">Linkedin</i></li>
+                                                <li class="off"><i class="c-icon-social icon--instagram">Instagram</i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="actions actions--sty1">
+                                            <a href="client-list.html" class="c-btn btn--grey">Cancel</a>
+                                            <input type="submit" class="c-btn is-primary" value="Submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="c-main-footer">
+            <p>2017 &copy; Create Media Services</p>
+        </footer>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

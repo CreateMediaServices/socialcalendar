@@ -1,0 +1,1242 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CMG | Social Calendar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="css/main.min.css">
+        <script src="js/header.min.js"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <div id="fb-root"></div>
+            <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="c-main-header clearfix">
+            <div class="header-row header-row--sty-1">
+                <div class="t-layout">
+                    <div class="t-row">
+                        <div class="t-col header-col">
+                            <a href="client-list.html" class="c-logo-w-title logo-w-title--sub-title"><i class="c-logo">Social Calendar</i><i class="txt">Social Calendar<span>Portal for scheduling social sharing.</span></i></a>
+                        </div>
+                        <!-- <div class="t-col header-col t-col--compress panel-action">
+                            <a href="add-img.html" class="c-btn btn--blue u-fr"><i class="fa fa-plus"></i>Add Image</a>
+                        </div> -->
+                        <div class="t-col header-col t-col--compress divide">
+                            <a href="javascript:void(0)" class="c-profile-info">
+                                <div class="icon">
+                                    <img src="img/cmg-logo--small.png" alt="CMG">
+                                </div>
+                                <div class="txt">
+                                    CMG
+                                </div>
+                            </a>
+                        </div>
+                        <div class="t-col header-col t-col--compress">
+                            <a href="index.html" class="c-icon"><i class="fa fa-sign-out"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="c-main">
+            <div class="calendar-view">
+                <div class="container-fluid">
+                    <div class="infoHead">
+                        <div class="client-info">
+                            <div class="client-logo"><img src="img/logo-nespresso.png" alt="Nespresso"></div>
+                            <div class="client-name"><h3>Nespresso</h3><p>Social Schedules</p></div>
+                        </div>
+                        <div class="client-edit">
+                            <a href="#"><i class="fa fa-pencil"></i></a>
+                        </div>
+                    </div>
+                    <div class="calender-area">
+                        <div class="row calender-row">
+                            <div class="column calender-heads">
+                                <div class="yearBox">
+                                    <select class="year-select">
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                    </select>
+                                </div>
+                                <div class="monthBox">
+                                    <ul class="months">
+                                        <li><a href="#">Jan</a></li>
+                                        <li><a href="#">Feb</a></li>
+                                        <li><a href="#">mar</a></li>
+                                        <li><a href="#" class="active">apr</a></li>
+                                        <li><a href="#">may</a></li>
+                                        <li><a href="#">jun</a></li>
+                                        <li><a href="#">Jul</a></li>
+                                        <li><a href="#">aug</a></li>
+                                        <li><a href="#">sep</a></li>
+                                        <li><a href="#">oct</a></li>
+                                        <li><a href="#">nov</a></li>
+                                        <li><a href="#">Dec</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="column date-box">
+                                <div class="feed-filter">
+                                    <div class="selected-month">August</div>
+                                    <div class="h-dropdown">
+                                        <label>Show Social:</label>
+                                        <select>
+                                            <option>All</option>
+                                            <option><i class="fa fa-facebook"></i> Facebook</option>
+                                            <option><i class="fa fa-twitter"></i> Twitter</option>
+                                            <option><i class="fa fa-linkedin"></i> Linkedin</option>
+                                            <option><i class="fa fa-instagram"></i> Instagram</option>
+                                        </select>
+                                    </div>
+                                    <div class="h-dropdown">
+                                        <label>With Status:</label>
+                                        <select>
+                                            <option>All</option>
+                                            <option>Approved</option>
+                                            <option>Disapproved</option>
+                                            <option>Pending</option>
+                                        </select>
+                                    </div>
+                                    <div class="cta-post">
+                                        <a href="#addpost_popup" class="c-btn c--btn-block js-open-modal">Add Post</a>
+                                    </div>
+                                </div>
+                                <div class="feed-listing js-feed-listing">
+                                    <div class="feed-scroll">
+                                        <div class="dayBox">
+                                            <div class="date">1</div>
+                                            <div class="postsRow js-postsRow">
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"><a href="#editpost_popup" class="js-open-modal"></a></div>
+                                                            <div class="source-icon ic-fb"><i class="fa fa-facebook"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p><a href="#editpost_popup" class="js-open-modal">Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</a></p>
+                                                            </div>
+                                                            <a href="#" class="delete-posticon"><i class="fa fa-times"></i></a>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-ig"><i class="fa fa-instagram"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#" class="delete-posticon"><i class="fa fa-times"></i></a>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-tw"><i class="fa fa-twitter"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-fb"><i class="fa fa-facebook"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-ig"><i class="fa fa-instagram"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-tw"><i class="fa fa-twitter"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dayBox">
+                                            <div class="date">2</div>
+                                            <div class="postsRow js-postsRow">
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"><a href="#editpost_popup" class="js-open-modal"></a></div>
+                                                            <div class="source-icon ic-fb"><i class="fa fa-facebook"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p><a href="#editpost_popup" class="js-open-modal">Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</a></p>
+                                                            </div>
+                                                            <a href="#" class="delete-posticon"><i class="fa fa-times"></i></a>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-ig"><i class="fa fa-instagram"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#" class="delete-posticon"><i class="fa fa-times"></i></a>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-tw"><i class="fa fa-twitter"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-fb"><i class="fa fa-facebook"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-ig"><i class="fa fa-instagram"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="dayBox">
+                                            <div class="date">3</div>
+                                            <div class="postsRow js-postsRow">
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-tw"><i class="fa fa-twitter"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dayBox">
+                                            <div class="date">4</div>
+                                            <div class="postsRow js-postsRow">
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"><a href="#editpost_popup" class="js-open-modal"></a></div>
+                                                            <div class="source-icon ic-fb"><i class="fa fa-facebook"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p><a href="#editpost_popup" class="js-open-modal">Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</a></p>
+                                                            </div>
+                                                            <a href="#" class="delete-posticon"><i class="fa fa-times"></i></a>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-ig"><i class="fa fa-instagram"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#" class="delete-posticon"><i class="fa fa-times"></i></a>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-tw"><i class="fa fa-twitter"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-fb"><i class="fa fa-facebook"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-ig"><i class="fa fa-instagram"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-li"><i class="fa fa-linkedin"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-tw"><i class="fa fa-twitter"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">5</div>
+                                            <div class="postsRow js-postsRow">
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"><a href="#editpost_popup" class="js-open-modal"></a></div>
+                                                            <div class="source-icon ic-fb"><i class="fa fa-facebook"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p><a href="#editpost_popup" class="js-open-modal">Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</a></p>
+                                                            </div>
+                                                            <a href="#" class="delete-posticon"><i class="fa fa-times"></i></a>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-ig"><i class="fa fa-instagram"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#" class="delete-posticon"><i class="fa fa-times"></i></a>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-tw"><i class="fa fa-twitter"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-fb"><i class="fa fa-facebook"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="postColumn">
+                                                    <div class="post">
+                                                        <div class="post-thumb">
+                                                            <div class="img" style="background-image: url(img/logo-hertz.png);"></div>
+                                                            <div class="source-icon ic-ig"><i class="fa fa-instagram"></i></div>
+                                                            <div class="share-time"><i class="fa fa-clock-o"></i><span>10:20am</span></div>
+                                                        </div>
+                                                        <div class="post-detail">
+                                                            <div class="content">
+                                                                <p>Lemonde, Grepefruit and Rosabaya coffee: our summer cocktail lorem ipsum dolor de smith</p>
+                                                            </div>
+                                                            <a href="#feedback_popup" class="detailpopup js-open-modal">
+                                                                <span class="socialName">Feedback</span>
+                                                                <span class="count">(3) <i class="fa fa-angle-right"></i></span>
+                                                            </a>
+                                                            <div class="post-status">
+                                                                <div class="cta-post">
+                                                                    <a href="#" class="approved js-approved">Approve</a>
+                                                                    <a href="#" class="disapproved js-disapproved">Disapprove</a>
+                                                                </div>
+                                                                <div class="status-approved">
+                                                                    <span><i class="fa fa-check"></i> Approved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                                <div class="status-disapproved">
+                                                                    <span><i class="fa fa-times"></i> Disapproved</span>
+                                                                    <a href="#" class="js-resetstatus"><i class="fa fa-undo"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">6</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">7</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">8</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">9</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">10</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">11</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">12</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">13</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">14</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                        <div class="dayBox">
+                                            <div class="date">15</div>
+                                            <div class="postsRow js-postsRow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="c-modal js-modal" id="feedback_popup">
+            <div class="modal-overlay js-close-popup"></div>
+            <div class="modalBox">
+                <div class="closeIcon js-close-popup">
+                    <i class="fa fa-times"></i>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="feedback-content">
+                            <h3 class="headingTxt">Feedback</h3>
+                            <div class="fb-listing">
+                                <div class="feedback-listing-box js-feed-listing">
+                                    <ul>
+                                        <li>
+                                            <div class="txt-content">
+                                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                            </div>
+                                            <div class="txt-icon icon-green">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt-content">
+                                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                            </div>
+                                            <div class="txt-icon">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt-content">
+                                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                            </div>
+                                            <div class="txt-icon">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt-content">
+                                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                            </div>
+                                            <div class="txt-icon icon-green">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt-content">
+                                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                            </div>
+                                            <div class="txt-icon">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="txt-content">
+                                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                            </div>
+                                            <div class="txt-icon">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="fb-form-block">
+                                    <label>Add Feedback:</label>
+                                    <textarea></textarea>
+                                    <button class="c-btn c--btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="fb-post-style">
+                            <div class="fb-post">
+                                <div class="brand-description">
+                                    <img src="img/nespresso-logo.jpg" alt="Logo">
+                                    <div class="brand-name">Nespresso<span class="date-time">21 July at 09:30 . <img src="img/t-d-icon.png"></span></div>
+                                </div>
+                                <div class="post-text">Happy is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><br>Get the full recipe here.
+                                </div>
+                                <div class="post-img">
+                                    <img src="img/post-img.jpg">
+                                </div>
+                                <div class="post-footer">
+                                    <img src="img/post-footer-img.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-modal js-modal" id="addpost_popup">
+            <div class="modal-overlay js-close-popup"></div>
+            <div class="modalBox modal-post">
+                <div class="closeIcon js-close-popup">
+                    <i class="fa fa-times"></i>
+                </div>
+                <div class="post-wraper">
+                    <div class="content-section">
+                        <h3 class="modal-heading">Add Post</h3>
+                        <div class="social-icons">
+                            <p>Social Platform:</p>
+                            <ul class="c-channels-list js-select-channel">
+                                <li class="off"><i class="c-icon-social icon--fb">Facebook</i></li>
+                                <li class="off"><i class="c-icon-social icon--twitter">Twitter</i></li>
+                                <li class="off"><i class="c-icon-social icon--linkedin">Linkedin</i></li>
+                                <li class="off"><i class="c-icon-social icon--instagram">Instagram</i></li>
+                            </ul>
+                        </div>
+                        <div class="imageBox">
+                            <label>Select Image:</label>
+                            <input type="file" class="js-select-image" accept=".png, .jpg, .jpeg">
+                            <a href="#" class="removeimg js-removeimg"><i class="fa fa-times"></i></a>
+                        </div>
+    
+                        <div class="form-style form-style--1">
+                            <label>Copy:</label>
+                            <textarea class="js-post-content-type"></textarea>
+                        </div>
+                        <div class="inputBox">
+                            <span>
+                                <label>Date:</label>
+                                <input type="date" name="" class="js-post-date-type">
+                            </span>
+                            <span>
+                                <label>Time:</label>
+                                <input type="time" name="" class="js-post-time-type">
+                            </span>
+                        </div>
+                        <div class="btnCustom">
+                            <button class="c-btn c--btn1 js-close-popup">Cancel</button>
+                            <button class="c-btn c--btn2">Add Post</button>
+                        </div>
+                    </div>
+                    <div class="post-section">
+                        <div class="fb-post">
+                            <div class="brand-description">
+                                <img src="img/nespresso-logo.jpg" alt="Logo">
+                                <div class="brand-name">Nespresso<span class="date-time"><span class="js-post-date-display"></span> at <span class="js-post-time-display"></span> <img src="img/t-d-icon.png"></span></div>
+                            </div>
+                            <div class="post-text js-post-content-display"></div>
+                            <div class="post-img">
+                                <img src="" class="js-preview-image">
+                            </div>
+                            <div class="post-footer">
+                                <img src="img/post-footer-img.png">
+                            </div>
+                        </div>
+                        <div class="preview-alert">This is not actual post preview</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="c-modal js-modal" id="editpost_popup">
+            <div class="modal-overlay js-close-popup"></div>
+            <div class="modalBox">
+                <div class="closeIcon js-close-popup">
+                    <i class="fa fa-times"></i>
+                </div>
+                <div class="row nomargin">
+                    <div class="col-md-5">
+                        <div class="addPost-content">
+                            <h3 class="headingTxt headingTxt--1">Edit Post</h3>
+                            <div class="social-icons">
+                                <p>Social Platform:</p>
+                                <ul class="c-channels-list js-radio-channel">
+                                    <li class=""><i class="c-icon-social icon--fb">Facebook</i></li>
+                                    <li class="off"><i class="c-icon-social icon--twitter">Twitter</i></li>
+                                    <li class="off"><i class="c-icon-social icon--linkedin">Linkedin</i></li>
+                                    <li class="off"><i class="c-icon-social icon--instagram">Instagram</i></li>
+                                </ul>
+                            </div>
+                            <div class="imageBox">
+                                <label>Select Image:</label>
+                                <input type="file" class="js-select-image" accept=".png, .jpg, .jpeg">
+                            </div>
+        
+                            <div class="form-style form-style--1">
+                                <label>Copy:</label>
+                                <textarea class="js-post-content-type"></textarea>
+                            </div>
+                            <div class="inputBox">
+                                <span>
+                                    <label>Date:</label>
+                                    <input type="date" name="">
+                                </span>
+                                <span>
+                                    <label>Time:</label>
+                                    <input type="time" name="">
+                                </span>
+                            </div>
+                            <div class="btnCustom">
+                                <button class="c-btn c--btn1 js-close-popup">Cancel</button>
+                                <button class="c-btn c--btn2">Add Post</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="fb-post-style">
+                            <div class="fb-post">
+                                <div class="brand-description">
+                                    <img src="img/nespresso-logo.jpg" alt="Logo">
+                                    <div class="brand-name">Nespresso<span class="date-time">21 July at 09:30 . <img src="img/t-d-icon.png"></span></div>
+                                </div>
+                                <div class="post-text js-post-content-display"></div>
+                                <div class="post-img">
+                                    <img src="img/post-img.jpg" class="js-preview-image">
+                                </div>
+                                <div class="post-footer">
+                                    <img src="img/post-footer-img.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="c-main-footer">
+            <p>2017 &copy; Create Media Services</p>
+        </footer>
+
+        <script src="js/scripts.min.js"></script>
+    </body>
+</html>
